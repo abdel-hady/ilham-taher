@@ -1,0 +1,39 @@
+@media (max-width: 992px) {
+    .width-110{
+        width: 110%;
+    }
+    .right-80{
+        right: 80px;
+    }
+    .text-align-center{
+        text-align: center;
+    }
+    .justify-content-center{
+        justify-content: center;
+    }
+}
+@media (max-width:640px ) {
+    .width-125{
+        width: 125%;
+    }
+    .right-95{
+        right: 95px;
+    }
+    .text-sm{
+        font-size: 0.75rem;
+    }
+    .btn-wide{
+        width: 12rem;
+        font-size: 0.85rem;
+    }
+}
+@media (max-width: 350px) {
+    .right-80{
+        right: 80px;
+    }
+    .btn-wide{
+        width: 10rem;
+        font-size: 0.75rem;
+    }
+
+}

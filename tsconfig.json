@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5", // specifies the ECMAScript version that the compiled code should support
+    "lib": ["dom", "dom.iterable", "esnext"], // specifies the built-in TypeScript libraries to include in the compilation process
+    "allowJs": true, // allows TypeScript to compile JavaScript files
+    "skipLibCheck": true, // skips type checking for the built-in TypeScript libraries
+    "strict": true, // enables strict type checking and other strict type-related rules
+    "forceConsistentCasingInFileNames": true, // enforces consistent casing for file names
+    "noEmit": true, // prevents the compiler from emitting any output files
+    "esModuleInterop": true, // enables interoperability between CommonJS and ES6 modules
+    "module": "esnext", // specifies the module format that should be used for the compiled code
+    "moduleResolution": "node", // specifies how TypeScript should resolve module imports
+    "resolveJsonModule": true, // enables TypeScript to import JSON files as modules
+    "isolatedModules": true, // enables incremental compilation
+    "jsx": "preserve", // specifies how TypeScript should handle JSX syntax
+    "incremental": true, // enables incremental compilation
+    "plugins": [ // specifies the TypeScript plugins toload
+      {
+        "name": "next" // loads the Next.js-specific TypeScript plugin
+      }
+    ],
+    "paths": { // specifies the path mappings for module imports
+      "@/*": ["./src/*"] // maps imports that start with "@/" to files in the "./src/" directory
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/RotatingSlider.jsx"], // specifies the files to include in the compilation process
+  "exclude": ["node_modules"] // specifies the files to exclude from the compilation process
+}

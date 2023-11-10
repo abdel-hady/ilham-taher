@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "next/core-web-vitals", // extends Next.js recommended rules for Core Web Vitals
+    "airbnb", // extends Airbnb's recommended rules
+    "airbnb-typescript" // extends Airbnb's recommended rules for TypeScript
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json" // specifies the TypeScript project file to use for parsing
+  },
+  "rules": {
+    "no-var": "error", // disallows the use of `var` (use `let` or `const` instead)
+    "default-case": "error", // requires a `default` case in `switch` statements
+    "require-await": "error", // disallows unnecessary `async`/`await` keywords
+    "arrow-body-style": "warn", // requires parentheses around arrow function parameters when necessary
+    "no-alert": "warn", // disallows the use of `alert`, `confirm`, and `prompt`
+    "no-console": "warn", // disallows the use of `console`
+    "prefer-const": "warn", // requires the use of `const` instead of `let` when the variable is not reassigned
+    "key-spacing": ["error", { "beforeColon": false, "afterColon": true }], // enforces consistent spacing aroundobject keys
+
+    "indent": ["error", "tab"], // enforces consistent indentation using tabs
+    "@typescript-eslint/indent": ["error", "tab"], // enforces consistent indentation for TypeScript using tabs
+    "@typescript-eslint/no-tabs": "off", // disallows the use of tabs in TypeScript
+    "react/jsx-indent": ["error", "tab"], // enforces consistent indentation for JSX using tabs
+    "react/jsx-indent-props": ["error", "tab"], // enforces consistent indentation for JSX props using tabs
+    "no-tabs": "off", // disallows the use of tabs
+
+    "react/jsx-one-expression-per-line": "off", // allows multiple JSX expressions in a single line
+    "comma-dangle": ["error", "only-multiline"], // requires trailing commas for multiline object or array literals
+
+    "no-multiple-empty-lines": ["warn", { "max": 2, "maxBOF": 0, "maxEOF": 0}], // limits the number of consecutive empty lines to 2
+    "react/require-default-props": "off" // disables the 'require-default-props' rule for the entire file
+  }
+}

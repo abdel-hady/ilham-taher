@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-slide:not(.swiper-slide-active) .swiper-slide-shadow-left,
+.swiper-slide:not(.swiper-slide-active) .swiper-slide-shadow-right {
+  background-image: none;
+  background-color: rgb(225, 225, 225);
+  opacity: 0.4 !important;
+}
+
+.custom-texture{
+  background-Image: url("/assets/images/texture.jpg");
+  /* background-size: 'cover'; */
+  background-size: 'cover';
+background-position:'center';
+  /* background-position: 'center center;'; */
+  transition: all 0.5s;
+
+}
+.custom-texture:hover{
+  background-Image: url("/assets/images/texture-greenish.jpg");
+
+  /* color: 'red' !important */
+
+}
+.bg-flowers{
+  background: url("/assets/images/heros/bg/flowers-low-opcaity.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #DFB05A  !important;
+}
+
+.blurred-out{
+  filter: blur(5px);
+}
+
+.alice-carousel__stage-item{
+  max-width: 480px !important;
+}
+.alice-carousel__stage{
+  text-align: center !important;
+}
+@media (max-width: 640px) {
+  .min-h-600-sm{
+    min-height: 600px;
+  }
+}
